@@ -10,6 +10,7 @@ class Jeju(models.Model):
     def __str__(self):
         return self.title
 
+
 class CropMarketData(models.Model):
     crop_type = models.CharField(max_length=20)
     supplier = models.CharField(max_length=20, blank=True)
