@@ -9,6 +9,6 @@ urlpatterns = [
     path("process", views.process, name="process"),
     path("resume", views.resume, name="resume"),
     path("code",views.code, name="code"),
-    path("carrot_jeju", views.jcarrot, name="jcarrot")
-
+    path("carrot_jeju", views.jcarrot, name="jcarrot"),
+    path("crop_market_data_view", views.crop_market_data_view, name="crop-market-data"),
 ]

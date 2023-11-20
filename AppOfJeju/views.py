@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from.models import Jeju
+from.models import Jeju, CropMarketData
 
 # Create your views here.
 
@@ -35,6 +35,7 @@ def jcarrot(request):
     jcarrot = Jeju.objects.all()
     return render(request, "detail/jeju/carrot_jeju.html", {"jcarrot": jcarrot} )
 
-
-
 # Create your views here.
+def crop_market_data_view(request):
+    data = CropMarketData.objects.all()
+    return render(request, 'calender.html', {'data':data})
